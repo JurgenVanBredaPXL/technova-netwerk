@@ -1,0 +1,11 @@
+hostname TechNova-Switch
+enable secret ****
+service password-encryption
+
+vlan 10
+ name DEVELOPERS
+vlan 20
+ name ADMIN_HR
+
+line vty 0 4
+ transport input ssh
