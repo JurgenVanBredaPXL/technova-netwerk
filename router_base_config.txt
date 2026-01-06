@@ -1,0 +1,9 @@
+hostname TechNova-Router
+enable secret ****
+service password-encryption
+ipv6 unicast-routing
+
+interface g0/0/0
+ ip address 192.168.10.1 255.255.255.0
+ ipv6 address 2001:DB8:10::1/64
+ no shutdown
